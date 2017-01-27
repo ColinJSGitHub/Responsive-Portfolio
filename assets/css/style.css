@@ -364,6 +364,11 @@ width or browswer width is equal to or less than 768 pixels.*/
 
 @media screen and (max-width: 640px) {
 
+  .container {
+  width: 100%;
+  max-width: 640px;
+  }
+
   #masthead {
   position: static;
   }

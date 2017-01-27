@@ -244,3 +244,154 @@ input[type=submit] {
   background: #4aaaa5;
   border: 0 none;
 }
+
+@media screen and (max-width: 980px) {
+/* media query to cause certain attributes to change once the screen
+width or browswer width is equal to or less than 980 pixels. Used
+because desktop layout is roughly 960px wide, and you want the media
+queries to kick in before content gets cut off*/
+
+  .container {
+  width: 100%;
+  max-width: 780px;
+  }
+
+/* made container smaller in order to make sure that I had some 'empty'
+space on the sides of the sections; didn't want my top bar to get cut off
+*/
+
+  nav {
+  margin-right: 25px;
+  }
+
+/* added right margin on nav bar to gain some space from right side of the
+browser window/screen. */
+
+  .main-section {
+  width: 100%;
+  max-width: 450px;
+  margin-left: 25px;
+  }
+
+/* shortened the max width of the main-section to reflect the sizing in
+the homework 'goal' images.*/
+
+  a#logo {
+  margin-left: 25px;
+  }
+
+
+  .auth-image {
+  width: 100%;
+  padding-bottom: 10px;
+  }
+
+/* I wanted the image to take up as much space as possible, thus pushing
+the paragraphs below the text as reflected in the homework 'goal' image.
+Using 100% width achieves this perfectly. Additionally, added some bottom
+padding to get some space between the image and the paragraph text.*/
+
+  .sidebar {
+  float: left;
+  margin-left: 45px;
+  }
+
+/* Changed to float left in order to keep the side bar closer to the
+main section. Added a left margin to ensure that spacing was maintained
+between the two sections.*/
+
+  .work:nth-child(even) {
+  margin-right: 0px;
+  }
+
+/* Removed margin right to get images to center */
+
+  .work {
+  width: 100%;
+  }
+
+/* Switched the width to 100% in order to get images to center and take up
+full space, per homework 'goal' image*/
+
+}
+
+@media screen and (max-width: 768px) {
+/* media query to cause certain attributes to change once the screen
+width or browswer width is equal to or less than 768 pixels.*/
+
+  a#logo {
+  margin-left: 25px;
+  }
+
+  #logo {
+  width: 160px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+  .container {
+  width: 100%;
+  max-width: 568px;
+  }
+
+  .main-section {
+  margin-left: 25px;
+  margin-right: 25px;
+  max-width: 518px;
+  }
+
+  .auth-image {
+  width: 50%;
+  padding-bottom: 0px;
+  }
+
+  .sidebar {
+  width: 100%;
+  max-width: 518px;
+  margin-left: 25px;
+  margin-right: 25px;
+  }
+
+  .work:nth-child(even) {
+  margin-right: 10%;
+  }
+
+  .work {
+  width: 45%;
+  margin-bottom: 0px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+
+  #masthead {
+  position: static;
+  }
+
+  a#logo {
+  max-width: 640px;
+  width: 100%;
+  margin: 0 auto;
+  }
+
+  nav {
+  max-width: 640px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  }
+
+  .auth-image {
+  width: 100%;
+  padding-bottom: 10px;
+  }
+
+  .work:nth-child(even) {
+  margin-right: 0px;
+  }
+
+  .work {
+  width: 100%;
+  }
+  }
+}
